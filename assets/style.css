@@ -1,6 +1,10 @@
 * {
     color: white 
 }
+html {
+    background: rgb(0,113,175);
+    background: linear-gradient(90deg, rgba(0,113,175,1) 0%, rgba(163,162,162,1) 30%, rgba(37,37,37,1) 70%, rgba(181,0,0,1) 100%);   
+}
 h1#welcome {
     text-align: center;
 }
