@@ -17,5 +17,13 @@ class ForceUser {
     renderForceUserInfo() {
         const forceUserData = document.createElement('div');
 
+        forceUserData.innerHTML = `
+        <h3>Name: ${this.name}</h3>
+        <p>Allegiance: ${this.team}</p>
+        <p>Gender: ${this.gender}</p>
+        <p>Race: ${this.race}</p>
+        <p>Force Ability: </p>
+        `;
+        return forceUserData;
     }
 };
