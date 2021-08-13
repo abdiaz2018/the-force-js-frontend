@@ -12,6 +12,11 @@ class ForceUser {
         const forceUserList = document.getElementById('force-user-list');
         const forceUserCard = document.createElement('div');
         forceUserCard.classList.add('force-user-card');
+
+        const forceUserInfo = this.renderForceUserInfo();
+
+        forceUserCard.appendChild(forceUserInfo);
+        forceUserList.appendChild(forceUserCard);
     };
 
     renderForceUserInfo() {
