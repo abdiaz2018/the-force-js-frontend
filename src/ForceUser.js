@@ -7,4 +7,9 @@ class ForceUser {
         this.race = race
         this.force_ability = force_ability
     };
+    renderForceUser() {
+        const forceUserList = document.getElementById('force-user-list');
+        const forceUserCard = document.createElement('div');
+        forceUserCard.classList.add('force-user-card');
+    };
 };
