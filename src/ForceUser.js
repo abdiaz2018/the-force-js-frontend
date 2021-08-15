@@ -1,11 +1,11 @@
 class ForceUser {
-    constructor({id, name, team, gender, race, force_ability}){
+    constructor({id, name, team, gender, race, force_ability_id}){
         this.id = id;
         this.name = name;
         this.team = team;
         this.gender = gender; 
         this.race = race
-        this.force_ability = force_ability
+        this.force_ability_id = force_ability_id
     };
 
     renderForceUser() {
