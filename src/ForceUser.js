@@ -27,7 +27,6 @@ class ForceUser {
         <p>Allegiance: ${this.team}</p>
         <p>Gender: ${this.gender}</p>
         <p>Race: ${this.race}</p>
-        <p>Force Ability: </p>
         `;
         return forceUserData;
     }
