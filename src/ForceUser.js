@@ -11,11 +11,15 @@ class ForceUser {
     renderForceUser() {
         const forceUserList = document.getElementById('force-user-list');
         const forceUserCard = document.createElement('div');
+        const deleteBtn = document.createElement('button');
         forceUserCard.classList.add('force-user-card');
+        deleteBtn.classList.add('delete-btn');
+        deleteBtn.innerText = 'Delete Force User'
 
         const forceUserInfo = this.renderForceUserInfo();
 
         forceUserCard.appendChild(forceUserInfo);
+        forceUserCard.appendChild(deleteBtn);
         forceUserList.appendChild(forceUserCard);
     };
 
