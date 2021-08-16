@@ -19,6 +19,7 @@ class ForceUser {
         const forceUserInfo = this.renderForceUserInfo();
 
         forceUserCard.appendChild(forceUserInfo);
+        //ability code here
         forceUserCard.appendChild(deleteBtn);
         forceUserList.appendChild(forceUserCard);
     };
