@@ -10,8 +10,11 @@ h1#welcome {
 }
 div.force-user-card {
     background-color: rgba(0,0,0,0.5);
-    width: 40%;
 }
 button {
     background-color: black;
+}
+section#force-user-list {
+    text-align: center;
+    width: fit-content;
 }
