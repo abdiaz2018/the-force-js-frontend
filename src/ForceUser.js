@@ -17,9 +17,11 @@ class ForceUser {
         deleteBtn.innerText = 'Delete Force User'
 
         const forceUserInfo = this.renderForceUserInfo();
+        //const forceAbilityData = ForceAbility.renderAbilityData();
 
         forceUserCard.appendChild(forceUserInfo);
         //ability code here
+        //forceUserCard.appendChild(forceAbilityData);
         forceUserCard.appendChild(deleteBtn);
         forceUserList.appendChild(forceUserCard);
     };
