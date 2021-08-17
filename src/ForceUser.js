@@ -16,12 +16,14 @@ class ForceUser {
         deleteBtn.classList.add('delete-btn');
         deleteBtn.innerText = 'Delete Force User'
 
+        deleteBtn.addEventListener('click', () => {
+            console.log(this,"I have been clicked on!");
+        });
+
         const forceUserInfo = this.renderForceUserInfo();
-        //const forceAbilityData = ForceAbility.renderAbilityData();
+
 
         forceUserCard.appendChild(forceUserInfo);
-        //ability code here
-        //forceUserCard.appendChild(forceAbilityData);
         forceUserCard.appendChild(deleteBtn);
         forceUserList.appendChild(forceUserCard);
     };
@@ -36,5 +38,6 @@ class ForceUser {
         <p>Race: ${this.race}</p>
         `;
         return forceUserData;
-    }
+    };
+
 };

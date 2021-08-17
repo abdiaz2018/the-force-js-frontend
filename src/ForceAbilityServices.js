@@ -8,10 +8,6 @@ class ForceAbilityServices {
         .then(resp => resp.json())
         .then(forceabilities => {
             console.log(forceabilities)
-            forceabilities.forEach(ability => {
-                const newAbility = new ForceAbility(ability)
-                newAbility.renderAbilityData();
-            })
         })
     };
 }
