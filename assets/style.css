@@ -34,6 +34,6 @@ section#force-user-list {
     flex-wrap: wrap;
 }
 .button {
-    
+    text-align: center;
     width: 100%;
 }
