@@ -4,4 +4,5 @@ class ForceAbility {
         this.name = name;
     };
 
+    
 };

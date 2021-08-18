@@ -1,11 +1,11 @@
 class ForceUser {
-    constructor({id, name, team, gender, race, force_ability_id}){
+    constructor({id, name, team, gender, race, force_ability}){
         this.id = id;
         this.name = name;
         this.team = team;
         this.gender = gender; 
         this.race = race
-        this.force_ability_id = force_ability_id
+        this.force_ability = force_ability
     };
 
     renderForceUser() {
@@ -36,6 +36,7 @@ class ForceUser {
         <p>Allegiance: ${this.team}</p>
         <p>Gender: ${this.gender}</p>
         <p>Race: ${this.race}</p>
+        <p>Force Ability: ${this.force_ability.name}</p>
         `;
         return forceUserData;
     };
