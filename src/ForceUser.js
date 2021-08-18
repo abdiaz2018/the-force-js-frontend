@@ -1,3 +1,4 @@
+const userApi = new ForceUserServices('http://localhost:3000/force_users');
 class ForceUser {
     constructor({id, name, team, gender, race, force_ability}){
         this.id = id;
@@ -17,7 +18,8 @@ class ForceUser {
         deleteBtn.innerText = 'Delete Force User'
 
         deleteBtn.addEventListener('click', () => {
-            console.log(this,"I have been clicked on!");
+            userApi.deleteUser(this.id);
+            forceUserCard.remove();
         });
 
         const forceUserInfo = this.renderForceUserInfo();
@@ -40,5 +42,6 @@ class ForceUser {
         `;
         return forceUserData;
     };
+
 
 };
