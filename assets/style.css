@@ -10,11 +10,30 @@ h1#welcome {
 }
 div.force-user-card {
     background-color: rgba(0,0,0,0.5);
+    padding: 1rem;
+    margin: 1rem;
+    /* -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin: -5px;
+    vertical-align: bottom; */
 }
 button {
     background-color: black;
 }
 section#force-user-list {
-    text-align: center;
+    /* text-align: center;
     width: fit-content;
+    columns: 300px 3;
+    
+    margin: auto; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.button {
+    
+    width: 100%;
 }
