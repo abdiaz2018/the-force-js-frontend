@@ -5,3 +5,4 @@ document.addEventListener('DOMContentLoaded', () => {
     forceUsers.getForceUsers();
     forceAbility.getForceAbilities();
 });
+
