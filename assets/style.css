@@ -61,3 +61,7 @@ section#force-user-list {
     float: right; 
     font-weight: bold;
 }
+
+#form-button {
+    color: black;
+}
