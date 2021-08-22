@@ -9,7 +9,7 @@ class ForceUser {
         this.force_ability = force_ability
     };
 
-    renderForceUser() {
+    renderForceUsers() {
         const forceUserList = document.getElementById('force-user-list');
         const forceUserCard = document.createElement('div');
         const deleteBtn = document.createElement('button');
