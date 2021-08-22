@@ -68,3 +68,6 @@ section#force-user-list {
 input {
     color: black;
 }
+select {
+    color: black;
+}
