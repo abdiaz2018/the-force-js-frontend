@@ -15,11 +15,11 @@ class ForceUserServices {
     };
 
     createUser() {
-        const userForm = document.getElementById('force-user-form')
+        event.preventDefault();
         const nameInput = document.getElementById('name')
         const teamInput = document.getElementById('team')
         const genderInput = document.getElementById('gender')
-        const raceInput = document.getElementsById('race')
+        const raceInput = document.getElementById('race')
         const ability = document.getElementById('ability-select')
 
         const formData = {
@@ -37,11 +37,11 @@ class ForceUserServices {
             },
             body: JSON.stringify(formData)
         };
-
-        fetch(baseURL, config)
+        debugger
+        fetch(this.baseURL, config)
         .then(resp => resp.json())
         .then(user => {
-            renderForceUsers(user);
+            render(user);
             userForm.reset();
         });
     }

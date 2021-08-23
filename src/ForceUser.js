@@ -30,7 +30,11 @@ class ForceUser {
         forceUserList.appendChild(forceUserCard);
     };
 
-    renderForceUserInfo() {
+    renderForceUser() {
+
+    }
+
+    render() {
         const forceUserData = document.createElement('div');
 
         forceUserData.innerHTML = `

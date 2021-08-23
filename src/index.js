@@ -1,9 +1,11 @@
-const forceUsers = new ForceUserServices('http://localhost:3000/force_users')
+// const forceUsers = new ForceUserServices('http://localhost:3000/force_users')
 const forceAbility = new ForceAbilityServices('http://localhost:3000/force_abilities')
+const userForm = document.getElementById('force-user-form')
 
 document.addEventListener('DOMContentLoaded', () => {
-    forceUsers.getForceUsers();
+    userApi.getForceUsers();
     forceAbility.getForceAbilities();
+    userForm.addEventListener('submit', userApi.createUser.bind(userApi)) 
 });
 
 var modal = document.getElementById("modal");
@@ -23,3 +25,4 @@ window.onclick = function(event) {
         modal.style.display = "none"
     }
 }
+
