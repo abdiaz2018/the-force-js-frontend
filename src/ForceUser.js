@@ -8,30 +8,25 @@ class ForceUser {
         this.race = race
         this.force_ability = force_ability
     };
-
-    renderForceUsers() {
+    
+    renderForceUser() {
         const forceUserList = document.getElementById('force-user-list');
         const forceUserCard = document.createElement('div');
         const deleteBtn = document.createElement('button');
         forceUserCard.classList.add('force-user-card');
         deleteBtn.classList.add('delete-btn');
         deleteBtn.innerText = 'Delete Force User'
-
+        
         deleteBtn.addEventListener('click', () => {
             userApi.deleteUser(this.id);
             forceUserCard.remove();
         });
-
-        const forceUserInfo = this.renderForceUserInfo();
-
-
+        
+        const forceUserInfo = this.render();
+        
         forceUserCard.appendChild(forceUserInfo);
         forceUserCard.appendChild(deleteBtn);
         forceUserList.appendChild(forceUserCard);
-    };
-
-    renderForceUser() {
-
     }
 
     render() {

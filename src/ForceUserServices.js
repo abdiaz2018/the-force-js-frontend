@@ -9,7 +9,7 @@ class ForceUserServices {
         .then(forceusers => {
             forceusers.forEach(user => {
                 const newUser = new ForceUser(user)
-                newUser.renderForceUsers();
+                newUser.renderForceUser();
             });
         })
     };
@@ -27,8 +27,9 @@ class ForceUserServices {
             team: teamInput.value,
             gender: genderInput.value,
             race: raceInput.value,
-            ability_id: ability.value 
+            force_ability_id: ability.value
         }
+        debugger
         const config = {
             method: 'POST',
             headers: {
@@ -37,11 +38,12 @@ class ForceUserServices {
             },
             body: JSON.stringify(formData)
         };
-        debugger
+
         fetch(this.baseURL, config)
         .then(resp => resp.json())
         .then(user => {
-            render(user);
+            const newUser = new ForceUser(user)
+            newUser.renderForceUser();
             userForm.reset();
         });
     }
